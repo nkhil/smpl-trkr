@@ -13,12 +13,10 @@ app.use(express.static('static'));
 
 let result = {}
 
-app.use('/m/:id/:name', (req, res) => {
+app.use('/t/:id/:name', (req, res) => {
   const { id, name } = req.params
   const { host, ipAddress, userAgent } = extractDetailsFromRequest(req);
-  console.log('result', result)
   if (result[id] && result[id][name]) {
-    console.log('exists')
     result[id][name] = result[id][name] += 1
   } else {
     if (result[id]) {

@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "tracking metric",
+  "description": "Tracking details extracted from the request",
+  "type": "object",
+  "properties": {
+    "userId": {
+      "type": "integer",
+      "description": "Unique identifier of the user"
+    },
+    "alias": {
+      "type": "string",
+      "description": "Alias for the tracking source. Eg: gh_home"
+    },
+    "sourceId": {
+      "type": "integer",
+      "description": "the id of the source that correlates with the alias. Eg: Github home"
+    },
+    "hostName": {
+      "type": "string",
+      "description": "hostname of the request. Eg: https://github.com"
+    },
+    "ipAddress": {
+      "type": "string",
+      "description": "IP address of the requester"
+    },
+    "userAgent": {
+      "type": "string",
+      "description": "user agent"
+    }
+  },
+  "required": [
+    "userId",
+    "alias",
+    "sourceId"
+  ],
+  "additionalProperties": false
+}
