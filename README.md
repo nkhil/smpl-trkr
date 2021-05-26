@@ -1,4 +1,4 @@
-# smpl trkr
+# 📈 smpl trkr
 
 A simple JS-free tracker to help track views anywhere you can add an `<img>` tag. (Works on Github, or your blog)
 
