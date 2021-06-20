@@ -5,7 +5,7 @@
   "type": "object",
   "properties": {
     "userId": {
-      "type": "integer",
+      "type": "string",
       "description": "Unique identifier of the user"
     },
     "alias": {
@@ -13,7 +13,7 @@
       "description": "Alias for the tracking source. Eg: gh_home"
     },
     "sourceId": {
-      "type": "integer",
+      "type": "string",
       "description": "the id of the source that correlates with the alias. Eg: Github home"
     },
     "hostName": {
@@ -31,7 +31,6 @@
   },
   "required": [
     "userId",
-    "alias",
     "sourceId"
   ],
   "additionalProperties": false
